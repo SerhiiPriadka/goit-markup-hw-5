@@ -59,7 +59,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn hero-btn-color">Заказать услугу</button>
+                <button class="hero-btn hero-btn-color" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -114,13 +114,22 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                     <ul class="galery-list list">
                     <li class="galery-item">
+                        <div class="galery-thumd">
                         <img src="./images/img.jpg" alt="Рабочий процес" width="370" height="294">
+                        <p class="p-title p-title-galery">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
                     </li>
                     <li class="galery-item">
+                        <div class="galery-thumd">
                         <img src="./images/img1.jpg" alt="Мобильные проложения" width="370" height="294">
+                        <p class="p-title p-title-galery">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
                     </li>
                     <li class="galery-item">
+                        <div class="galery-thumd">
                         <img src="./images/img2.jpg" alt="Спектр цветов" width="370" height="294">
+                        <p class="p-title p-title-galery">ДИЗАЙНЕРСКИЕ РНШЕНИЯ</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -372,7 +381,7 @@
                 </address>
             </div>
                 <div class="footer-social-container">
-                    <p class="footer-title">ПРИСОЕДЕНЯЙТЕСЬ</p>
+                    <p class="p-title">ПРИСОЕДЕНЯЙТЕСЬ</p>
                 <ul class="list footer-social">
                     <li class="social-item">
                         <a class="social-link social-link-instagram link" href="">
@@ -406,6 +415,16 @@
                 </div>    
         </div>
     </footer>
-
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-wraper">
+        <button class="modal-btn" type="button" data-modal-close>
+            <svg class="modal-icon">
+                <use href="./images/contact-icon.svg#close-black"></use>
+            </svg>
+        </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
